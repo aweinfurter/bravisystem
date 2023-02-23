@@ -1,0 +1,19 @@
+#carousel-bravisystem .carousel-item img {
+    height: 500px;
+    object-fit: cover;
+    width: 100%;
+}
+
+#serviços {
+    margin-top: 24px;
+}
+
+#serviços img {
+    padding: 20px;
+}
+
+@media screen and (max-width: 767px) {
+    #carousel-bravisystem .carousel-item img {
+        height: 280px;
+    }
+}
