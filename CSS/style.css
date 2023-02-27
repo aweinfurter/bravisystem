@@ -4,12 +4,45 @@
     width: 100%;
 }
 
+header {
+    background-color: #fff;
+    border-bottom: 3px solid #0a58ca;
+}
+
+.logo-header {
+    height: 50px;
+}
+
+#about-us {
+    background-color: #eee;
+}
+
+#about-us p {
+    text-align: justify;
+    font-size: 22px;
+}
+
 #serviços {
     margin-top: 24px;
 }
 
-#serviços img {
-    padding: 20px;
+#servicos img {
+    padding: 60px;
+}
+
+.card {
+    background-color: #eee;
+    border: 1px solid #0a58ca;
+}
+
+.nav .nav-link.active {
+    background-color: #eee;
+    color: #0a58ca;
+}
+
+.nav .nav-link.active:hover {
+    background-color: #0a58ca;
+    color: #eee;
 }
 
 @media screen and (max-width: 767px) {

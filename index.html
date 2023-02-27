@@ -9,9 +9,25 @@
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
-    <header>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
         <div class="container">
-            <h1>Bravisystem Engenharia</h1>
+            <img src="./images/Logo.png" alt="Logo Slaid" class="logo-header">
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end pt-4" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a href="#about-us" class="nav-link">Sobre</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#servicos" class="nav-link">Serviços</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#contato" class="nav-link">Contato</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </header>
     <section id="carousel">
@@ -21,7 +37,7 @@
                         <img class="d-block w-100" src="./images/casas_com_alma.jpg" alt="casas com alma">
                     </div>
                     <div data-bs-interval="3000" class="carousel-item">
-                        <img class="d-block w-100" src="./images/world_tennis.jpg" alt="world tennis">
+                        <img class="d-block w-100" src="./images/edice.jpg" alt="world tennis">
                     </div>
                     <div data-bs-interval="3000" class="carousel-item">
                         <img class="d-block w-100" src="./images/deville.jpg" alt="restaurante deville">
@@ -40,77 +56,171 @@
                 </div>
             </div>
     </section>
-    <section id="serviços">
-        <div class="container">
+    <section id="about-us">
+        <div class="container pt-4 pb-4">
             <div class="row">
-                <div class="col-lg-4 col-sm-12 col-md-6">
-                    <div class="card">
-                        <img src="./images/pci.png" alt="extintor">
-                        <div class="card-body">
-                            <h4 class="card-tittle">
-                                Projeto Preventivo Contra incêndio
-                            </h4>
-                            <ul class="list-card">
-                                <li>Alarme de incêndio</li>
-                                <li>Extintores</li>
-                                <li>Chuveiros automáticos - Srinklers</li>
-                                <li>Saídas de emergência</li>
-                                <li>Iluminação de emergência</li>
-                            </ul>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
+                <div class="col-lg-5">
+                    <img src="./images/CAPA.jpg" alt="capa Bravisystem" class="d-block w-100 rounded">
                 </div>
-                <div class="col-lg-4 col-sm-12 col-md-6">
-                    <div class="card">
-                        <img src="./images/hidro.png" alt="torneira">
-                        <div class="card-body">
-                            <h4 class="card-tittle">
-                                Projeto de instalações hidrossantárias
-                            </h4>
-                            <ul>
-                                <li>Instalção de água fria</li>
-                                <li>Instalção de água quente</li>
-                                <li>Instalção de esgoto e gordura</li>
-                                <li>Águas pluviais</li>
-                                <li>Fossa, filtro e sumidouro</li>
-                            </ul>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
+                <div class="col-lg-7">
+                    <h2>Sobre nós</h2>
+                    <p>Empresa multidisciplinar de engenharia, criada a partir da junção de engenheiros e técnicos com experiência em projeto e desenvolvimento de produtos, com o objetivo de ampliar a atuação nas áreas de Engenharia.</p>
+                    <p>Atuando nas áreas de indústria e varejo, focamos na elaboração de projetos complementares, desenvolvimento de produtos, prototipagem, elaboração de laudos e documentos técnicos.</p>
+                    <p>Temos como objetivo atender uma gama maior de serviços agregando qualidade e objetivando reduzir custos ao nosso cliente na implantação e desenvolvimento de serviços de engenharia.</p>
                 </div>
-                <div class="col-lg-4 col-sm-12 col-md-6">
-                    <div class="card">
-                        <img src="./images/gas.png" alt="butijão de gás">
-                        <div class="card-body">
-                            <h4 class="card-tittle">
-                                Projeto de gás canalizado
-                            </h4>
-                            <ul>
-                                <li>GLP</li>
-                                <li>GN</li>
-                            </ul>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
+            </div>
+        </div>
+    </section>
+    <section id="servicos">
+        <div class="container pt-4 pb-4">
+            <div class="row">
+                <h2 class="section-tittle text-center pt-4 pb-4">Nossos Serviços</h2>
+            </div>
+            <div class="row">
+                <aside class="col-md-2">
+                    <nav class="nav nav-pills flex-column nav-servicos">
+                        <button type="button" data-bs-toggle="tab" data-bs-target="#engenhariacivil" class="fw-bold text-start nav-link text-colored active">Engenharia Civil</button>
+                        <button type="button" data-bs-toggle="tab" data-bs-target="#engenhariaeletrica" class="fw-bold text-start nav-link text-colored">Engenharia Elétrica</button>
+                        <button type="button" data-bs-toggle="tab" data-bs-target="#engenhariamecanina" class="fw-bold text-start nav-link text-colored">Engenharia Mecânica</button>
+                    </nav>
+                </aside>
+                <div class="col-md-10">
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="engenhariacivil">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <img src="./images/pci.png" alt="extintor">
+                                        <div class="card-body">
+                                            <h4 class="card-tittle">
+                                                Projeto Preventivo Contra incêndio
+                                            </h4>
+                                            <ul class="list-card">
+                                                <li>Alarme de incêndio</li>
+                                                <li>Extintores</li>
+                                                <li>Chuveiros automáticos - Srinklers</li>
+                                                <li>Saídas de emergência</li>
+                                                <li>Iluminação de emergência</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <img src="./images/hidro.png" alt="torneira">
+                                        <div class="card-body">
+                                            <h4 class="card-tittle">
+                                                Projeto de instalações hidrossantárias
+                                            </h4>
+                                            <ul>
+                                                <li>Instalção de água fria</li>
+                                                <li>Instalção de água quente</li>
+                                                <li>Instalção de esgoto e gordura</li>
+                                                <li>Águas pluviais</li>
+                                                <li>Fossa, filtro e sumidouro</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <img src="./images/gas.png" alt="butijão de gás">
+                                        <div class="card-body">
+                                            <h4 class="card-tittle">
+                                                Projeto de gás canalizado
+                                            </h4>
+                                            <ul>
+                                                <li>GLP</li>
+                                                <li>GN</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <img src="./images/coifa.png" alt="coifa">
+                                        <div class="card-body">
+                                            <h4 class="card-tittle">
+                                                Projeto de Combate a Incêndio na Exaustão
+                                            </h4>
+                                            <ul>
+                                                <li>Saponificante</li>
+                                                <li>CO2</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-12 col-md-6">
-                    <div class="card">
-                        <img src="./images/coifa.png" alt="coifa">
-                        <div class="card-body">
-                            <h4 class="card-tittle">
-                                Projeto de Combate a Incêndio na Exaustão
-                            </h4>
-                            <ul>
-                                <li>Saponificante</li>
-                                <li>CO2</li>
-                            </ul>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
+                        <div class="tab-pane" id="engenhariaeletrica">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <img src="./images/instalacoes-eletricas.png" alt="tomada">
+                                        <div class="card-body">
+                                            <h4 class="card-tittle">
+                                                Projeto de instalações elétricas
+                                            </h4>
+                                            <ul>
+                                                <li>Istalação elétrica</li>
+                                                <li>Levantamento de carga</li>
+                                                <li>Subestação</li>
+                                                <li>Aterramento</li>
+                                                <li>SPDA</li>
+                                                <li>Entrada de energia</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <img src="./images/comunicacao.png" alt="comunicação">
+                                        <div class="card-body">
+                                            <h4 class="card-tittle">
+                                                Projeto de comunicação
+                                            </h4>
+                                            <ul>
+                                                <li>Dados</li>
+                                                <li>Voz</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <img src="./images/seguranca.png" alt="camera">
+                                        <div class="card-body">
+                                            <h4 class="card-tittle">
+                                                Projeto de Segurança
+                                            </h4>
+                                            <ul>
+                                                <li>Alarme de intrusão</li>
+                                                <li>CFTV</li>
+                                                <li>Cerca elétrica</li>
+                                                <li>Controle de acesso</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <img src="./images/som.png" alt="som">
+                                        <div class="card-body">
+                                            <h4 class="card-tittle">
+                                                Projeto de Sonorização
+                                            </h4>
+                                            <ul>
+                                                <li>Infraestrutura de som</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>    
+        </div>
     </section>
     <script src="./JS/bootstrap.bundle.min.js"></script>
 </body>
